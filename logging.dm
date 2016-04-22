@@ -5,7 +5,12 @@
 /var/const/LOG_DEBUG   = 3
 /var/const/LOG_TRACE   = 4
 
-/proc/Log(level, description, exception/exception)
+// Catch all error messages and route it through the Log proc.
+/world/Error(var/ex) Log.PrintMessage(LOG_ERROR, ex)
+
+/var/riftstation/Log/Log = new
+
+/riftstation/Log/proc/PrintMessage(level, description, exception/exception)
 	var/world_log_level
 
 	try { world_log_level = configuration.log_level } catch { world_log_level = LOG_TRACE }
