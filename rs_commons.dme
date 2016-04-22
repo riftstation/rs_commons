@@ -1,0 +1,23 @@
+// BEGIN_INTERNALS
+// END_INTERNALS
+// BEGIN_FILE_DIR
+#define FILE_DIR .
+// END_FILE_DIR
+// BEGIN_PREFERENCES
+// END_PREFERENCES
+// BEGIN_INCLUDE
+#include <deadron\xml\XML.dme>
+#include <nullquery\dbchangelog\dbchangelog.dme>
+#include <nullquery\mysql4dm\mysql4dm.dme>
+#include <nullquery\nq_commons\nq_commons.dme>
+#include <nullquery\pgsql4dm\pgsql4dm.dme>
+#include <nullquery\sqlite4dm\sqlite4dm.dme>
+#include "configuration.dm"
+#include "database.dm"
+#include "logging.dm"
+#include "rs_commons.dm"
+// END_INCLUDE
+
+#ifdef __MAIN__
+#include "project_specific.dm"
+#endif
