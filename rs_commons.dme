@@ -12,12 +12,9 @@
 #include <nullquery\nq_commons\nq_commons.dme>
 #include <nullquery\pgsql4dm\pgsql4dm.dme>
 #include <nullquery\sqlite4dm\sqlite4dm.dme>
-#include "configuration.dm"
-#include "database.dm"
-#include "logging.dm"
-#include "rs_commons.dm"
+#include "coding/rs_commons.dm"
 // END_INCLUDE
 
 #ifdef __MAIN__
-#include "project_specific.dm"
+#include "coding/project_specific.dm"
 #endif
